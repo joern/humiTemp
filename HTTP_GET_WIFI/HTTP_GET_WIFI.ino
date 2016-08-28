@@ -10,13 +10,13 @@ extern "C" {
 #define DHTTYPE DHT22   // DHT 22  (AM2302)
 
 // Existing WiFi network
-const char* ssid     = "THE SSDI";
-const char* password = "THE KEY";
+const char* ssid     = "Unterdeck";
+const char* password = "!1KnFn1!";
 
 //emoncoms
-const char* host = "HOSTNAME";
+const char* host = "logger.allmers.de";
 const char* nodeId   = "UNIQUENODEID";
-const char* privateKey = "SECRET KEY";
+const char* privateKey = "40d033e1949e44e4aab882c19e8e4a0e";
 
 int ledState = LOW;
 
