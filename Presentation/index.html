@@ -24,20 +24,110 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Title</section>
-				<section>Why</section>
-				<section>What - Hardware1</section>
-				<section>What - Hardware2</section>
-				<section>What - Hardware3</section>
-				<section>What - Software - Demo http diode</section>
-				<section>What - software console</section>
-				<section>What - software wifi http get</section>
-				<section>What - software wifi http get DEMO</section>
-				<section>What - software server side</section>
+				<section>
+					<h1>IoT for 10$</h1>
+					<h4>7$ if you have an USB power supply</h4>
+					<small>Jörn Allmers, 29/Aug/2016</small>
+				</section>
+				<section>
+					<h3>IoT?</h3>
+					<blockquote cite="https://en.wikipedia.org/wiki/Internet_of_things">The internet of things (IoT) is the network of physical devices, vehicles, buildings and other items—embedded with electronics, software, sensors, actuators, and network connectivity that enable these objects to collect and exchange data</blockquote> (wikipedia)
+				</section>
+				<section>
+					<section>
+						<h1>Why?</h1>
+						<ul>
+							<li>Monitor the humidity, temperature and dew-point at my attic</li>
+							<li>Take care of to high humidity to avoid mould</li>
+							<li>Commercial devices are about 200€</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Really?</h1>
+						<ul>
+							<li>Because I can</li>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h1>Wemos d1 mini</h1>
+					<img src="img/d1.jpg">
+					</section>
+					<section>
+						<h1>Wemos d1 mini</h1>
+						<ul>
+							<li>wifi board based on ESP-8266EX</li>
+							<li>11 digital input/output pins, all pins have interrupt/pwm/I2C/one-wire supported</li>
+							<li>A Micro USB connection</li>
+							<li>Compatible with Arduino</li>
+							<li>Shields!</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Wemos d1 mini</h1>
+						<img src="img/solder.jpg" alt="solder" width="30%" style="float: right">
+						<ul tyle="width:55%">
+							<li>No need to solder SMD</li>
+							<li>But you need to solder the connectors</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Wemos d1 mini</h1>
+						<ul>
+							<li>Cheap: 4$</li>
+							<li>Tip: buy directly in China, only small amounts, remember Einfuhrumsatzsteuer</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>DHT22</h1>
+						<img src="img/dht.jpg" alt="DHT22" width="30%" style="float: right">
+							<ul style="width:55%">
+								<li>Temperature: -40~80°C (±0.5°C)</li>
+								<li>Humidity: 0-99.9%RH (±2%RH)</li>
+								<li>To get real-time data, you need read twice (measure after read)</li>
+							</ul>
+
+						
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>HTTP LED</h1>
+						<ul>
+						<li>Switch onboard LED via http</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Send temperature</h1>
+						<ul>
+						<li>No server, send values as HTTP get</li>
+						<li>Longer sleep cycles, less energy consumption</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Server side</h1>
+						<ul>
+							<li>emoncms.org</li>
+							<li>originally for power consumption</li>
+							<li>nice visualisations</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Java?</h1>
+						<ul>
+							<li>Softwaredeveloper?</li>
+							<li>Yes! Next holiday :-)</li>
+						</ul>
+					</section>
+				</section>
 				<section>
 					<h1>Links</h1>
 					<ul>
-						<li>Wemos.cc (blocked within KN)</li>
+						<li><a href="http://www.wemos.cc/">Wemos.cc</a> (blocked within KN)</li>
 						<li><a href="https://github.com/joern/humiTemp">github.com/joern/humiTemp</a></li>
 						<li><a href="https://emoncms.org/">emoncms.org</a></li>
 					</ul>
